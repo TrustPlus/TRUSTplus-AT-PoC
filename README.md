@@ -5,4 +5,5 @@ Once the PoC phase is complete the code will be ported to the next version of th
 Please contact Sergio Tafur <setafur@gmail.com> with any questions/concerns and/or interest in collaboration.
 
 TRUST Donations welcome @ TQ1QtspFa3PZFGwc8n4zUTD1u5PA2SJEKe
+
 BTC Donations welcom @ 1DxAPU87qRTuitKrZyWvCRhtYcYWaMomjb
