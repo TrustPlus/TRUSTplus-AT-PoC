@@ -6,4 +6,4 @@ Please contact Sergio Tafur <setafur@gmail.com> with any questions/concerns and/
 
 TRUST Donations welcome @ TQ1QtspFa3PZFGwc8n4zUTD1u5PA2SJEKe
 
-BTC Donations welcom @ 1DxAPU87qRTuitKrZyWvCRhtYcYWaMomjb
+BTC Donations welcome @ 1DxAPU87qRTuitKrZyWvCRhtYcYWaMomjb
