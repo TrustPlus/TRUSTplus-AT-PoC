@@ -1,0 +1,15 @@
+python Random_Sphere.py --coins 100 --addr 10 --tries 200 --multiplier .000001 --res 20
+
+Max Coins to send per Attempt:  0.001
+Min Coins to send per Attempt:  0.0001
+Current block: 18183 Sent Coins: 100.005335739 
+
+Expected Coins: 100.0
+Sent Coins: 100.005335739
+%diff: 0.00533574
+
+Total Transactions:  181636
+Total Blocks:  18183
+
+Max. Dist, Sum. Dist: 155.00000000, 18183.00000000
+Norm. Max. Dist., Norm. Sum. Dist.: 0.00852445, 1.00000000
