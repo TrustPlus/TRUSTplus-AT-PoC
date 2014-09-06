@@ -3,31 +3,50 @@ import struct
 
 #Define Transactions
 #Genesis TrustPlus Transaction
-version = '01000000'
-numInputs = '01'
-prevHash = '0000000000000000000000000000000000000000000000000000000000000000'
-prevOut_n = '4294967295'
-script_sig_in = '00012a0634204a756c79'
-sequence = '4294967295'
-numOutputs = '01'
-value_out = '0000000000000000'
-script_sig_out = ''
-n_lock_time = '00000000'
+#version = '01000000'
+#print 'Length of version:',len(version)
 
-tx = version+numInputs+prevHash+prevOut_n+script_sig_in+sequence+numOutputs+value_out+script_sig_out+n_lock_time
+#time = hex(1404416230)
+#time = "".join(map("".join, reversed(zip(*[iter(time)]*2)))).replace('0x','')
+#print 'Length of time:',len(time)
 
-#First TrustPlusTransaction
+#numInputs = '01'
+#print 'Length of numInputs:',len(numInputs)
+
+#prevTransHash = '0000000000000000000000000000000000000000000000000000000000000000'
+#print 'Length of prevTransHash:',len(prevTransHash)
+
+#prevOut_n = 'ffffffff'
+#print 'Length of prevOut_n:',len(prevOut_n)
+
+#script_sig_in = '0300012a0634204a756c79'
+#print 'Length of script_sig_in:',len(script_sig_in)
+
+#sequence = 'ffffffff'
+#print 'Length of sequence:',len(sequence)
+
+#numOutputs = '00'
+#print 'Length of numOutputs:',len(numOutputs)
+
+#value_out = '0000000000000000'
+#print 'Length of value_out:',len(value_out)
+
+#script_sig_out = '19'
+#print 'Length of script_sig_out:',len(script_sig_out)
+
+#n_lock_time = '00000000'
+#print 'Length of n_lock_time:',len(n_lock_time)
+
+##First TrustPlusTransaction
 version = '01000000'
-#lockTime = 'e6ecb553'
-lockTime = hex(1404431590)
-lockTime = "".join(map("".join, reversed(zip(*[iter(lockTime)]*2)))).replace('0x','')
+time = hex(1404431590)
+time = "".join(map("".join, reversed(zip(*[iter(time)]*2)))).replace('0x','')
 numInputs = '01'
 prevTransHash = '0000000000000000000000000000000000000000000000000000000000000000'
 prevOut_n = 'ffffffff'
 script_sig_in = '03510101'
 sequence = 'ffffffff'
 numOutputs = '01'
-#value_out = '002c2fced8380100'
 value_out = hex(343978800000000).replace('0x','')
 while len(value_out) < 16: value_out = '0'+value_out
 value_out = "".join(map("".join, reversed(zip(*[iter(value_out)]*2))))
@@ -35,7 +54,8 @@ script_sig_out = '1976a914309e3021aa07143350f97c75a2d82ea79bec892988ac'
 n_lock_time = '00000000'
 
 #tx = '01000000e6ecb553010000000000000000000000000000000000000000000000000000000000000000ffffffff03510101ffffffff01002c2fced83801001976a914309e3021aa07143350f97c75a2d82ea79bec892988ac00000000'
-tx = version+lockTime+numInputs+prevTransHash+prevOut_n+script_sig_in+sequence+numOutputs+value_out+script_sig_out+n_lock_time
+
+tx = version+time+numInputs+prevTransHash+prevOut_n+script_sig_in+sequence+numOutputs+value_out+script_sig_out+n_lock_time
 print tx
 
 print 'Check length of the transaction: ',len(binascii.unhexlify(tx))
